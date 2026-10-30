@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .eyebrow { color: var(--accent); font-family: ui-monospace, Consolas, monospace; margin: 0 0 8px 0; }
+    .card p, .card li { color: var(--dim); }
+    .card b { color: #e6f1ff; }                 /* bold words stay bright */
+    .card ol { padding-left: 20px; }
+    .card li { margin-bottom: 12px; }
+</style>
+
+<div class="card">
+    <p class="eyebrow">My goal</p>
+    <h1>Building a career in tech.</h1>
+    <p>I'm an IT student turning what I learn into websites that help real businesses, one project at a time.</p>
+</div>
+
+<div class="card">
+    <p class="eyebrow">The plan</p>
+    <h2>How I'm getting there</h2>
+    <ol>
+        <li><b>Learn:</b> HTML, CSS, JavaScript and Python (Flask) every day, through my course and real projects.</li>
+        <li><b>Build:</b> finish 2 to 3 real projects for this portfolio, so clients can see what I can do.</li>
+        <li><b>Find clients:</b> start with people I already know who need an online presence, like phone sellers, small shops and student businesses.</li>
+        <li><b>Earn trust:</b> deliver on time, then ask each happy client for a short review and a referral.</li>
+        <li><b>Grow:</b> raise my prices as my skills grow, and add new services.</li>
+    </ol>
+</div>
+
+<div class="card">
+    <p class="eyebrow">For clients</p>
+    <h2>What I can build for you</h2>
+    <p>Clean, professional websites that make it easy for customers to find you and reach you on WhatsApp.</p>
+    <a class="button" href="/contact">Get in touch</a>
+</div>
+
+{% endblock %}

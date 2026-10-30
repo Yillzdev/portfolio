@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .card input {                      /* the password box */
+        padding: 12px 16px;
+        border-radius: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text);
+        margin-right: 10px;
+    }
+    .card button { font-size: 16px; font-family: inherit; }
+</style>
+
+<div class="card">
+    <h1>Password Door</h1>
+    <p>Can you guess it? Hint: it starts with a capital S.</p>
+
+    <form method="post">               <!-- sends what's typed back to Flask -->
+        <input type="password" name="password" placeholder="Enter password">
+        <button class="button" type="submit">Open</button>
+    </form>
+
+    <p>{{ message }}</p>               <!-- shows Welcome or the error -->
+</div>
+
+{% endblock %}

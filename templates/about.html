@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+    .tag {                             /* small glass pill for each skill */
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .card ul { padding-left: 20px; color: var(--dim); }   /* the bullet list */
+    .card p { color: var(--dim); }
+</style>
+
+<div class="card">
+    <p style="color: var(--accent); font-family: ui-monospace, Consolas, monospace; margin: 0;">01. About me</p>
+    <h1>The short story</h1>
+    <p>I'm Ayorinde Ayomade, an Information Technology student at UNIOSUN.
+        Welcome to my website.
+       I started learning to code with Python, and now I'm building real websites with Flask, HTML and CSS.</p>
+    <p>I learn best by building, so every page on this site was made by me, one small step at a time.</p>
+</div>
+
+<div class="card">
+    <p style="color: var(--accent); font-family: ui-monospace, Consolas, monospace; margin: 0;">02. Skills</p>
+    <h2>What I work with</h2>
+    <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+    </div>
+</div>
+
+<div class="card">
+    <p style="color: var(--accent); font-family: ui-monospace, Consolas, monospace; margin: 0;">03. Right now</p>
+    <h2>Currently learning</h2>
+    <ul>
+        <li>HTML, CSS and JavaScript on Coursera</li>
+        <li>How to make websites that work on phones</li>
+        <li>Putting my projects online</li>
+    </ul>
+</div>
+
+{% endblock %}
