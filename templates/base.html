@@ -191,6 +191,26 @@
     }
 
     /* ===== BUTTONS (hover + click feedback) ===== */
+    /* ===== SOCIAL ICONS ===== */
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--dim);
+      transition: all 0.3s ease;
+      margin-left: 8px;
+    }
+    
+    .social-icon:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--text);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(100, 255, 218, 0.15);
+    }
     .button {
       display: inline-block;
       padding: 14px 30px;
